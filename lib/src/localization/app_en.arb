@@ -1,0 +1,6 @@
+{
+  "appTitle": "flutter_helper",
+  "@appTitle": {
+    "description": "Set of tools to help you code in flutter and dart."
+  }
+}
