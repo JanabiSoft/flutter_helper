@@ -7,11 +7,7 @@ import 'shell_item.dart';
 class SampleItemListView extends StatelessWidget {
   const SampleItemListView({
     Key? key,
-    this.items = const [
-      ShellItem(1, "Default Theme"),
-      ShellItem(2, "Sample 2"),
-      ShellItem(3, "Sample 3")
-    ],
+    this.items = const [ShellItem(1, "Default Theme"), ShellItem(2, "Color Scheme"), ShellItem(3, "Sample 3")],
   }) : super(key: key);
 
   static const routeName = '/';
@@ -52,7 +48,7 @@ class SampleItemListView extends StatelessWidget {
           final item = items[index];
 
           return ListTile(
-              title: Text('${item.pageName} ${item.id}'),
+              title: Text(item.pageName),
               leading: const CircleAvatar(
                 // Display the Flutter Logo image asset.
                 foregroundImage: AssetImage('assets/images/flutter_logo.png'),
